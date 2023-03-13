@@ -2,8 +2,8 @@ import CopiarAlPortapapeles from "../CopiarAlPortapapeles/CopiarAlPortapapeles";
 // import SignatureTemplate from "../SignatureTemplate/SignatureTemplate";
 
 
-const ComponenteA = () => {
-    const contenidoACopiar = (name, surname, occupation, email, instagram, webSite = '', phone = '', imageSrc) => {
+const ComponenteA = (name, surname, occupation, email, instagram, webSite = '', phone = '', imageSrc) => {
+    const contenidoACopiar = () => {
         return (
             <table className='templateContainer'>
                 <tr>
@@ -36,8 +36,8 @@ const ComponenteA = () => {
 
   return (
     <div>
-      <div dangerouslySetInnerHTML={{ __html: contenidoACopiar('Malena', 'Díaz', 'Web Developer at emBlue', 'diazlopezmalena@gmail.com', 'https://www.instagram.com/malenadiazlopez/', 'www.myweb.com', '000', 'https://i.ibb.co/9vMvcWK/profile.png') }}></div>
-      <CopiarAlPortapapeles contenido={contenidoACopiar('Malena', 'Díaz', 'Web Developer at emBlue', 'diazlopezmalena@gmail.com', 'https://www.instagram.com/malenadiazlopez/', 'www.myweb.com', '000', 'https://i.ibb.co/9vMvcWK/profile.png')} />
+      <div dangerouslySetInnerHTML={{ __html: contenidoACopiar}}></div>
+      <CopiarAlPortapapeles contenido={contenidoACopiar} />
     </div>
   );
 };
