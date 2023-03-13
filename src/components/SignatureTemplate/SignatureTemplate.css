@@ -1,0 +1,40 @@
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0px;
+    font-size: 13px;
+}
+
+
+.profilePicture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.templateContainer {
+    width: fit-content;
+    padding: 20px;
+    margin: 100px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.templateContainerText {
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ocuppation {
+    color:rgb(11, 137, 125);
+    margin-bottom: 20px;
+}

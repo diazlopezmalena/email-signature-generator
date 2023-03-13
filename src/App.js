@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+
+// import SignatureTemplate from './components/SignatureTemplate/SignatureTemplate';
+import ComponenteA from './components/ComponenteA/ComponenteA';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+
+      <ComponenteA name='Malena' surname='Díaz' occupation='Web Developer at emBlue' email='diazlopezmalena@gmail.com' instagram='https://www.instagram.com/malenadiazlopez/' webSite='www.myweb.com' phone='000' imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  />      
     </div>
   );
 }
 
 export default App;
+
+{/* <SignatureTemplate name='Malena' surname='Díaz' occupation='Web Developer at emBlue' email='diazlopezmalena@gmail.com' instagram='https://www.instagram.com/malenadiazlopez/' webSite='www.myweb.com' phone='000' imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  /> */}
