@@ -50,7 +50,7 @@ function EmailSignatureMaker() {
           <input type="text" value={social} onChange={(e) => setSocial(e.target.value)} />
         </div>
       </form>
-      <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc='https://files.embluemail.com/uo/43871/slides5-19.jpg'  />
+      <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  />
     </div>
     /*<hr />
       <h2>Signature Preview:</h2>

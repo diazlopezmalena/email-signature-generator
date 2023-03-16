@@ -1,12 +1,16 @@
 import './App.css';
 import SignatureTemplate from './components/SignatureTemplate/SignatureTemplate';
+import EmailSignatureMaker from './components/Form/Form.jsx';
 // import ComponenteA from './components/ComponenteA/ComponenteA';
 
 function App() {
   return (
+    <>
     <div className="App">
       <SignatureTemplate name='Malena' surname='Díaz' occupation='Web Developer at emBlue' email='diazlopezmalena@gmail.com' instagram='https://www.instagram.com/malenadiazlopez/' webSite='www.myweb.com' phone='000' imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  />      
+      <EmailSignatureMaker />
     </div>
+    </>
   );
 }
 
