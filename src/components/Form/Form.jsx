@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SignatureTemplate from '../SignatureTemplate/SignatureTemplate';
+import './Form.css'
 
 function EmailSignatureMaker() {
   const [name, setName] = useState('');
@@ -9,6 +10,7 @@ function EmailSignatureMaker() {
   const [email, setEmail] = useState('');
   const [web, setWeb] = useState('');
   const [social, setSocial] = useState('');
+  const [image, setImage] = useState('');
 
   // Función para generar la firma de correo electrónico
   /*Hola
@@ -19,6 +21,7 @@ function EmailSignatureMaker() {
 
   return (
     <div>
+      <div>
       <h1>Email Signature Maker</h1>
       <form>
         <div>
@@ -49,8 +52,15 @@ function EmailSignatureMaker() {
           <label>Social Media:</label>
           <input type="text" value={social} onChange={(e) => setSocial(e.target.value)} />
         </div>
+        <div>
+          <label>Image:</label>
+          <input type="img" value={image} onChange={(e) => setImage(e.target.value)} />
+        </div>
       </form>
+      </div>
+      <div>
       <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  />
+      </div>
     </div>
     /*<hr />
       <h2>Signature Preview:</h2>
