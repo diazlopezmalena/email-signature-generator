@@ -19,7 +19,7 @@ const SignatureTemplate = ({ name, surname, occupation, email, instagram, webSit
                         <p>{email}</p>
                             
                         <a href={instagram} target='_blank' rel='noreferrer'> 
-                            <img src='https://i.ibb.co/yR6Y26K/instagram.png' alt='' style={{display:displayNone }} /> 
+                            <img src='https://i.ibb.co/yR6Y26K/instagram.png' alt='' style={{display:displayNone }} width={'10px'} /> 
                         </a>
                         {/* <a href={facebook}> <img src='/images/facebook.svg' alt='' /> </a>
                         <a href={twitter}> <img src='/images/twitter.svg' alt='' /> </a>

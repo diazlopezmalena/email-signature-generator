@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SignatureTemplate from '../SignatureTemplate/SignatureTemplate';
+import TestCopy from '../TestCopy/TestCopy';
 import './Form.css'
 
 function EmailSignatureMaker() {
@@ -62,7 +63,9 @@ function EmailSignatureMaker() {
       </form>
       </div>
       <div className="flex-auto w-64">
-      <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  />
+      <TestCopy firma={<SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc={image}  />} />
+      {/* <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc={image}  /> */}
+      {/* <SignatureTemplate name={name} surname={surname} occupation={position} email={email} instagram={social} webSite={web} phone={phone} imageSrc='https://i.ibb.co/9vMvcWK/profile.png'  /> */}
       </div>
       </div>
     </div>
